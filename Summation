@@ -1,0 +1,15 @@
+public class arraySum {
+    public static int sum(int[] sumArray) {
+        int result = 0;
+        for (int i = 0; i < sumArray.length; i++) {
+            sum += sumArray[i];
+        }
+        return sum;
+    }
+    
+    public static void main(String[] args) {
+        int[] sumArray = {16, 7, 5, 2, 18};
+        int sum = sum(sumArray);
+        System.out.println("Array's summation is " + sum);
+    }
+}
