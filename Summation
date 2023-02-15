@@ -1,6 +1,6 @@
 public class arraySum {
     public static int sum(int[] sumArray) {
-        int result = 0;
+        int sum = 0;
         for (int i = 0; i < sumArray.length; i++) {
             sum += sumArray[i];
         }
