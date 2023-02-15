@@ -17,6 +17,15 @@ public class arraySum {
         return product;
     }
     
+    
+     public static int[] reverseArray(int[] numArray) {
+        int[] reversedArray = new int[numArray.length];
+        for (int i = 0; i < numArray.length; i++) {
+            reversedArray[i] = numArray[numArray.length - i - 1];
+        }
+        return reversedArray;
+    }
+    
     public static void main(String[] args) {
         Scanner textIntake = new Scanner(System.in);
         System.out.print("Enter how many integer numbers will be added: ");
@@ -31,6 +40,10 @@ public class arraySum {
       
         int sum = sum(numArray);
         int product = product(numArray);
+        int[] reversedArray = reverseArray(numArray);
         System.out.println("Array's summation is " + sum + " and the product of the array is " + product);
+        System.out.println("And the array reversed is ");
+        for(int i = 0; i < reversedArray.length; i++)
+            System.out.print(reversedArray[i]+ " ");
     }
 }
