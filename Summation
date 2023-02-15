@@ -17,16 +17,13 @@ public class arraySum {
         return product;
     }
     
-   public static int[] reverseArray(int[] numArray) {
+    
+     public static int[] reverseArray(int[] numArray) {
         int[] reversedArray = new int[numArray.length];
         for (int i = 0; i < numArray.length; i++) {
             reversedArray[i] = numArray[numArray.length - i - 1];
         }
-        System.out.println("The array backwards is ");
-        for(int j = 0; j< numArray.length; j++) {
-            System.out.print(reversedArray[j] + " ");
-        }
-        return numArray;
+        return reversedArray;
     }
     
     public static void main(String[] args) {
@@ -40,10 +37,13 @@ public class arraySum {
         }
         textIntake.close();
         
-       int[] numberArray = {1,2,3};
-       reverseArray(numberArray);
+      
         int sum = sum(numArray);
         int product = product(numArray);
+        int[] reversedArray = reverseArray(numArray);
         System.out.println("Array's summation is " + sum + " and the product of the array is " + product);
+        System.out.println("And the array reversed is ");
+        for(int i = 0; i < reversedArray.length; i++)
+            System.out.print(reversedArray[i]+ " ");
     }
 }
