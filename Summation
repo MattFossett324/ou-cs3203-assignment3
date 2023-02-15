@@ -8,7 +8,7 @@ public class arraySum {
     }
     
      public static int product(int[] numArray) {
-        int product = 0;
+        int product = 1;
         for (int i = 0; i < numArray.length; i++) {
             product *= numArray[i];
         }
